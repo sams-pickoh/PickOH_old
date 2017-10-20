@@ -1,0 +1,80 @@
+2017-09-23T07:08:43+00:00 ERR (3): 
+exception 'Exception' with message 'Unable to create directory './media/magecheckout'. Access forbidden.' in /var/www/html/pickoh/lib/Varien/Io/File.php:618
+Stack trace:
+#0 /var/www/html/pickoh/lib/Varien/Io/File.php(615): Varien_Io_File->checkAndCreateFolder('/var/www/html/p...', 511)
+#1 /var/www/html/pickoh/lib/Varien/Io/File.php(615): Varien_Io_File->checkAndCreateFolder('/var/www/html/p...', 511)
+#2 /var/www/html/pickoh/lib/Varien/Io/File.php(615): Varien_Io_File->checkAndCreateFolder('/var/www/html/p...', 511)
+#3 /var/www/html/pickoh/lib/Varien/Io/File.php(300): Varien_Io_File->checkAndCreateFolder('/var/www/html/p...')
+#4 /var/www/html/pickoh/app/code/local/Magecheckout/SocialLogin/Model/Generator/Css.php(54): Varien_Io_File->open(Array)
+#5 /var/www/html/pickoh/app/code/local/Magecheckout/SocialLogin/Model/Generator/Css.php(27): Magecheckout_SocialLogin_Model_Generator_Css->_generateStoreCss('english', 'design')
+#6 /var/www/html/pickoh/app/code/local/Magecheckout/SocialLogin/Model/Generator/Css.php(18): Magecheckout_SocialLogin_Model_Generator_Css->_generateWebsiteCss(Object(Mage_Core_Model_Website), 'design')
+#7 /var/www/html/pickoh/app/code/local/Magecheckout/SocialLogin/Model/Adminhtml/Observer.php(16): Magecheckout_SocialLogin_Model_Generator_Css->generateCss(NULL, NULL, 'design')
+#8 /var/www/html/pickoh/app/code/core/Mage/Core/Model/App.php(1358): Magecheckout_SocialLogin_Model_Adminhtml_Observer->adminhtmlSystemConfigSave(Object(Varien_Event_Observer))
+#9 /var/www/html/pickoh/app/code/core/Mage/Core/Model/App.php(1337): Mage_Core_Model_App->_callObserverMethod(Object(Magecheckout_SocialLogin_Model_Adminhtml_Observer), 'adminhtmlSystem...', Object(Varien_Event_Observer))
+#10 /var/www/html/pickoh/app/Mage.php(448): Mage_Core_Model_App->dispatchEvent('controller_acti...', Array)
+#11 /var/www/html/pickoh/app/code/core/Mage/Core/Controller/Varien/Action.php(546): Mage::dispatchEvent('controller_acti...', Array)
+#12 /var/www/html/pickoh/app/code/core/Mage/Core/Controller/Varien/Action.php(422): Mage_Core_Controller_Varien_Action->postDispatch()
+#13 /var/www/html/pickoh/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('save')
+#14 /var/www/html/pickoh/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#15 /var/www/html/pickoh/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#16 /var/www/html/pickoh/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#17 /var/www/html/pickoh/index.php(83): Mage::run('', 'store')
+#18 {main}
+2017-09-23T07:08:43+00:00 ERR (3): 
+exception 'Exception' with message 'Unable to create directory './media/magecheckout'. Access forbidden.' in /var/www/html/pickoh/lib/Varien/Io/File.php:618
+Stack trace:
+#0 /var/www/html/pickoh/lib/Varien/Io/File.php(615): Varien_Io_File->checkAndCreateFolder('/var/www/html/p...', 511)
+#1 /var/www/html/pickoh/lib/Varien/Io/File.php(615): Varien_Io_File->checkAndCreateFolder('/var/www/html/p...', 511)
+#2 /var/www/html/pickoh/lib/Varien/Io/File.php(615): Varien_Io_File->checkAndCreateFolder('/var/www/html/p...', 511)
+#3 /var/www/html/pickoh/lib/Varien/Io/File.php(300): Varien_Io_File->checkAndCreateFolder('/var/www/html/p...')
+#4 /var/www/html/pickoh/app/code/local/Magecheckout/SocialLogin/Model/Generator/Css.php(54): Varien_Io_File->open(Array)
+#5 /var/www/html/pickoh/app/code/local/Magecheckout/SocialLogin/Model/Generator/Css.php(27): Magecheckout_SocialLogin_Model_Generator_Css->_generateStoreCss('french', 'design')
+#6 /var/www/html/pickoh/app/code/local/Magecheckout/SocialLogin/Model/Generator/Css.php(18): Magecheckout_SocialLogin_Model_Generator_Css->_generateWebsiteCss(Object(Mage_Core_Model_Website), 'design')
+#7 /var/www/html/pickoh/app/code/local/Magecheckout/SocialLogin/Model/Adminhtml/Observer.php(16): Magecheckout_SocialLogin_Model_Generator_Css->generateCss(NULL, NULL, 'design')
+#8 /var/www/html/pickoh/app/code/core/Mage/Core/Model/App.php(1358): Magecheckout_SocialLogin_Model_Adminhtml_Observer->adminhtmlSystemConfigSave(Object(Varien_Event_Observer))
+#9 /var/www/html/pickoh/app/code/core/Mage/Core/Model/App.php(1337): Mage_Core_Model_App->_callObserverMethod(Object(Magecheckout_SocialLogin_Model_Adminhtml_Observer), 'adminhtmlSystem...', Object(Varien_Event_Observer))
+#10 /var/www/html/pickoh/app/Mage.php(448): Mage_Core_Model_App->dispatchEvent('controller_acti...', Array)
+#11 /var/www/html/pickoh/app/code/core/Mage/Core/Controller/Varien/Action.php(546): Mage::dispatchEvent('controller_acti...', Array)
+#12 /var/www/html/pickoh/app/code/core/Mage/Core/Controller/Varien/Action.php(422): Mage_Core_Controller_Varien_Action->postDispatch()
+#13 /var/www/html/pickoh/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('save')
+#14 /var/www/html/pickoh/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#15 /var/www/html/pickoh/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#16 /var/www/html/pickoh/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#17 /var/www/html/pickoh/index.php(83): Mage::run('', 'store')
+#18 {main}
+2017-09-23T07:20:06+00:00 ERR (3): 
+exception 'Zend_Mail_Transport_Exception' with message 'Unable to send mail. ' in /var/www/html/pickoh/lib/Zend/Mail/Transport/Sendmail.php:142
+Stack trace:
+#0 /var/www/html/pickoh/lib/Zend/Mail/Transport/Abstract.php(348): Zend_Mail_Transport_Sendmail->_sendMail()
+#1 /var/www/html/pickoh/lib/Zend/Mail.php(1194): Zend_Mail_Transport_Abstract->send(Object(Zend_Mail))
+#2 /var/www/html/pickoh/app/code/core/Mage/Core/Model/Email/Template.php(452): Zend_Mail->send()
+#3 /var/www/html/pickoh/app/code/core/Mage/Core/Model/Email/Template.php(509): Mage_Core_Model_Email_Template->send(Array, Array, Array)
+#4 /var/www/html/pickoh/app/code/core/Mage/Core/Model/Email/Template/Mailer.php(84): Mage_Core_Model_Email_Template->sendTransactional('customer_passwo...', 'support', Array, Array, Array, '1')
+#5 /var/www/html/pickoh/app/code/core/Mage/Customer/Model/Customer.php(714): Mage_Core_Model_Email_Template_Mailer->send()
+#6 /var/www/html/pickoh/app/code/core/Mage/Customer/Model/Customer.php(666): Mage_Customer_Model_Customer->_sendEmailTemplate('customer/passwo...', 'customer/passwo...', Array, '1')
+#7 /var/www/html/pickoh/app/code/local/Magecheckout/SocialLogin/controllers/Authentication/GoogleController.php(38): Mage_Customer_Model_Customer->sendPasswordReminderEmail()
+#8 /var/www/html/pickoh/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Magecheckout_SocialLogin_Authentication_GoogleController->callbackAction()
+#9 /var/www/html/pickoh/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('callback')
+#10 /var/www/html/pickoh/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#11 /var/www/html/pickoh/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#12 /var/www/html/pickoh/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#13 /var/www/html/pickoh/index.php(83): Mage::run('', 'store')
+#14 {main}
+2017-09-24T06:33:34+00:00 ERR (3): 
+exception 'Zend_Mail_Transport_Exception' with message 'Unable to send mail. ' in /var/www/html/pickoh/lib/Zend/Mail/Transport/Sendmail.php:142
+Stack trace:
+#0 /var/www/html/pickoh/lib/Zend/Mail/Transport/Abstract.php(348): Zend_Mail_Transport_Sendmail->_sendMail()
+#1 /var/www/html/pickoh/lib/Zend/Mail.php(1194): Zend_Mail_Transport_Abstract->send(Object(Zend_Mail))
+#2 /var/www/html/pickoh/app/code/core/Mage/Core/Model/Email/Template.php(452): Zend_Mail->send()
+#3 /var/www/html/pickoh/app/code/core/Mage/Core/Model/Email/Template.php(509): Mage_Core_Model_Email_Template->send(Array, Array, Array)
+#4 /var/www/html/pickoh/app/code/core/Mage/Core/Model/Email/Template/Mailer.php(84): Mage_Core_Model_Email_Template->sendTransactional('customer_passwo...', 'support', Array, Array, Array, '1')
+#5 /var/www/html/pickoh/app/code/core/Mage/Customer/Model/Customer.php(714): Mage_Core_Model_Email_Template_Mailer->send()
+#6 /var/www/html/pickoh/app/code/core/Mage/Customer/Model/Customer.php(666): Mage_Customer_Model_Customer->_sendEmailTemplate('customer/passwo...', 'customer/passwo...', Array, '1')
+#7 /var/www/html/pickoh/app/code/local/Magecheckout/SocialLogin/controllers/Authentication/FacebookController.php(43): Mage_Customer_Model_Customer->sendPasswordReminderEmail()
+#8 /var/www/html/pickoh/app/code/core/Mage/Core/Controller/Varien/Action.php(418): Magecheckout_SocialLogin_Authentication_FacebookController->callbackAction()
+#9 /var/www/html/pickoh/app/code/core/Mage/Core/Controller/Varien/Router/Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('callback')
+#10 /var/www/html/pickoh/app/code/core/Mage/Core/Controller/Varien/Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#11 /var/www/html/pickoh/app/code/core/Mage/Core/Model/App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#12 /var/www/html/pickoh/app/Mage.php(684): Mage_Core_Model_App->run(Array)
+#13 /var/www/html/pickoh/index.php(83): Mage::run('', 'store')
+#14 {main}

@@ -1,0 +1,3 @@
+16 Sep 2017
+****************
+/var/www/html/pickoh/skin/frontend/smartwave/porto/css/magecheckout/sociallogin/style.css
